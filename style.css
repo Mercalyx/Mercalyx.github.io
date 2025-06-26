@@ -1,71 +1,142 @@
-/* Mercalyx: Kaosun içindeki düzeni kuran adam */
-
 :root {
-  --primary: #0f172a;       /* Gece gibi karanlık ama güven veren */
-  --accent: #38bdf8;        /* Zekâ, akış ve teknik hız */
-  --contrast: #facc15;      /* Beklenmedik bir parıltı */
-  --danger: #ef4444;        /* Sınır geçilirse... */
-  --font-main: 'Courier New', monospace;
-  --font-size: 1rem;
+  --primary: #0f172a;
+  --accent: #38bdf8;
+  --contrast: #facc15;
+  --text: #f1f5f9;
+  --font: 'Courier New', monospace;
 }
 
 body {
-  background-color: var(--primary);
-  color: var(--accent);
-  font-family: var(--font-main);
-  font-size: var(--font-size);
-  line-height: 1.6;
   margin: 0;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-h1::after {
-  content: "⚔️ Mercalyx";
-  color: var(--contrast);
-  display: block;
-  font-size: 2rem;
-  margin-top: 0.5rem;
-  animation: pulse 2s infinite;
+  background: var(--primary);
+  font-family: var(--font);
+  color: var(--text);
 }
 
 a {
-  color: var(--contrast);
   text-decoration: none;
-  border-bottom: 1px dashed var(--accent);
-  transition: all 0.3s ease;
+  color: var(--accent);
 }
 
-a:hover {
-  color: var(--danger);
-  border-color: var(--danger);
+header {
+  background: #020617;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
-  border: 1px solid var(--accent);
-  border-radius: 12px;
-  max-width: 500px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--contrast);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+  z-index: 0;
+}
+
+.hero-content {
+  z-index: 1;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--contrast);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: var(--accent);
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--contrast);
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about, .contact {
+  max-width: 800px;
+  margin: auto;
+}
+
+.projects {
+  background: #1e293b;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 2rem;
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
 }
 
-@keyframes pulse {
-  0% { opacity: 0.8; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.05); }
-  100% { opacity: 0.8; transform: scale(1); }
+.project-card {
+  width: 300px;
+  background: #0f172a;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-  .card {
-    font-size: 0.9rem;
-  }
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+footer {
+  background: #020617;
+  color: #94a3b8;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
