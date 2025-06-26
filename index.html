@@ -2,13 +2,59 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Merhaba</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercalyx</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Sayfaya hoşgeldiniz</h1>
-  <div class="card">
-    <p>Workintech kod sanatçısı.</p>
-  </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">⚔️ Mercalyx</div>
+      <ul class="nav-links">
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1500&q=80" alt="Background Image" class="bg">
+    <div class="hero-content">
+      <h1>Ben Mercalyx</h1>
+      <p>Savaşın ritmini kodla belirleyen bir zihin.</p>
+      <a href="#projeler" class="btn">Projelerime Göz At</a>
+    </div>
+  </section>
+
+  <section class="about" id="hakkimda">
+    <h2>🧠 Hakkımda</h2>
+    <p>Yazılımda estetik, yaratıcılıkta algoritmik düşünce arayan bir geliştiriciyim. Frontend'den backend'e, oyunlardan yapay zekaya her alanda üretim heyecanıyla yaşıyorum.</p>
+  </section>
+
+  <section class="projects" id="projeler">
+    <h2>💻 Projelerim</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <img src="https://picsum.photos/400/200?grayscale" alt="Project 1">
+        <h3>Kontratik</h3>
+        <p>Sözleşme hesaplama robotu. Streamlit + Python + UI.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://picsum.photos/400/201?grayscale" alt="Project 2">
+        <h3>TapVibe AI</h3>
+        <p>Telefon dokunuşuyla AI destekli sosyal eşleşme platformu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="iletisim">
+    <h2>📬 İletişim</h2>
+    <p>Bana <strong>mercalyx@gmail.com</strong> adresinden ulaşabilirsin.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Mercalyx. Kodla, dönüştür, yaşa.</p>
+  </footer>
 </body>
 </html>
