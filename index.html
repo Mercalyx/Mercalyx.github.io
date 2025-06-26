@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mertcan | Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Mertcan</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">Hakkımda</a></li>
-          <li><a href="#projects">Projeler</a></li>
-          <li><a href="#contact">İletişim</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h2>Merhaba, ben Mertcan</h2>
-        <p>Java, Spring Boot, React ve Node.js teknolojileriyle çalışan bir full stack developer’ım.</p>
-        <a href="#projects" class="btn">Projelerime Göz At</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mertcan | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <h1 class="logo">Mertcan</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
+        </nav>
       </div>
-      <img src="https://source.unsplash.com/800x600/?technology,office" alt="Laptop" />
-    </div>
-  </section>
+    </header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>Hakkımda</h2>
-      <p>Boğaziçi Üniversitesi mezunuyum. Kurumsal yazılım geliştirme, yapay zekâ destekli sistemler ve UI/UX konularında çalışıyorum. Hem teknik hem yaratıcı çözümler sunmaya odaklanıyorum.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projeler</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="https://source.unsplash.com/400x300/?code,project" alt="Proje 1" />
-          <h3>Kontratik</h3>
-          <p>Streamlit tabanlı sözleşme hesaplama aracı.</p>
+    <section class="hero fade-in">
+      <div class="container hero-grid">
+        <div>
+          <h2>Merhaba, ben Mertcan 👋</h2>
+          <p>Java, Spring Boot, React ve Node.js ile kurumsal projeler geliştiriyorum.</p>
+          <a class="btn slide-in" href="#projects">Projelerime Göz At</a>
         </div>
-        <div class="project-card">
-          <img src="https://source.unsplash.com/400x300/?app,ui" alt="Proje 2" />
-          <h3>TapVibe.AI</h3>
-          <p>NFC + AI tabanlı sosyal etkileşim uygulaması.</p>
+        <img src="https://cdn.pixabay.com/photo/1581093630846-f3c2348d0fae" alt="Mertcan" />
+      </div>
+    </section>
+
+    <section id="about" class="section fade-in">
+      <div class="container">
+        <h2>Hakkımda</h2>
+        <p>Boğaziçi Üniversitesi mezunuyum. Fullstack development, yapay zeka destekli sistemler ve kullanıcı odaklı ürünler geliştirme konusunda tutkuluyum.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section fade-in">
+      <div class="container">
+        <h2>Projelerim</h2>
+        <div class="projects-grid">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="Project 1">
+            <h3>Kontratik</h3>
+            <p>Sözleşme hesaplama aracı. Python & Streamlit ile geliştirildi.</p>
+          </div>
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/laptop-1958306_960_720.jpg" alt="Project 2">
+            <h3>TapVibe.AI</h3>
+            <p>AI destekli sosyal eşleşme uygulaması. NFC & GPT destekli.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>İletişim</h2>
-      <p>Bana <strong>mertcan.mert@yahoo.com</strong> adresinden ulaşabilirsin.</p>
-    </div>
-  </section>
+    <section id="contact" class="section fade-in">
+      <div class="container">
+        <h2>İletişim</h2>
+        <p>Bana <strong>mercan.dev@gmail.com</strong> adresinden ulaşabilirsin.</p>
+      </div>
+    </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Mercalyx. Tüm hakları saklıdır.</p>
-    </div>
-  </footer>
-</body>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Mertcan. Kodla, geliştir, dönüştür.</p>
+      </div>
+    </footer>
+  </body>
 </html>
